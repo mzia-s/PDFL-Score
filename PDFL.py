@@ -14,7 +14,7 @@ import logging
 from bond_extraction import Atom, get_bonded_atoms, en_vals 
 
 
-# Constants and parameters as previously defined
+# Constants and parameters 
 protein_atoms = ['C', 'N', 'O', 'S']
 ligand_atoms = ['C', 'N', 'O', 'S', 'P', 'F', 'Cl', 'Br', 'I']
 radii = {'C': 1.7, 'N': 1.55, 'O': 1.52, 'S': 1.80, 'P': 1.80, 'F': 1.47, 'Cl': 1.75, 'Br': 1.85, 'I': 1.98}
@@ -396,10 +396,10 @@ def main():
     job_id = args.job_id
     subfolders_to_process = args.subfolders
 
-    main_folder = "/mnt/scratch/ziamusha/v2007"
-    csv_output_folder = "/mnt/home/ziamusha/Documents/Flagser-Laplacian/v2007/L_t2_v3/CSVlor_t2_v3"
-    csv_file_path = os.path.join(csv_output_folder, f'pdfl_betti_bar_sums_{job_id}.csv')
-    error_log_path = f"/mnt/home/ziamusha/Documents/Flagser-Laplacian/v2007/L_t2_v3/LOG/error_log_{job_id}.txt"
+    main_folder = 
+    csv_output_folder = 
+    csv_file_path = 
+    error_log_path = 
 
     for subfolder in subfolders_to_process:
         process_subfolder(subfolder, main_folder, csv_file_path, error_log_path)
